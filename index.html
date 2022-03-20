@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dong Ho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="clock">
+            <img id="hrs1" src="icons/00.gif">
+            <img id="hrs2" src="icons/00.gif">
+            <img src="icons/haicham.gif" alt="">
+            <img id="mns1" src="icons/00.gif">
+            <img id="mns2" src="icons/00.gif">
+            <img src="icons/haicham.gif" alt="">
+            <img id="scn1" src="icons/00.gif">
+            <img id="scn2" src="icons/00.gif">  
+        </div>
+        <div class="greeting">
+            <span class="grt"></span>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var icons = new Array('icons/00.gif','icons/01.gif','icons/02.gif','icons/03.gif','icons/04.gif','icons/05.gif','icons/06.gif','icons/07.gif','icons/08.gif','icons/09.gif');
+    var interval = setInterval(function(){
+        var date= new Date();
+        var hrs= String(date.getHours());
+        var mns= String(date.getMinutes());
+        var scn= String(date.getSeconds());
+
+        if(hrs<10){
+            $('#hrs1').attr('src',icons[0]);
+            $('#hrs2').attr('src',icons[hrs.charAt(0)]);
+        }
+        else{
+            $('#hrs1').attr('src',icons[hrs.charAt(0)]);
+            $('#hrs2').attr('src',icons[hrs.charAt(1)]);
+        }
+
+        if(mns<10){
+            $('#mns1').attr('src',icons[0]);
+            $('#mns2').attr('src',icons[mns.charAt(0)]);
+        }
+        else{
+            $('#mns1').attr('src',icons[mns.charAt(0)]);
+            $('#mns2').attr('src',icons[mns.charAt(1)]);
+        }
+
+        if(scn<10){
+            $('#scn1').attr('src',icons[0]);
+            $('#scn2').attr('src',icons[scn.charAt(0)]);
+        }
+        else{
+            $('#scn1').attr('src',icons[scn.charAt(0)]);
+            $('#scn2').attr('src',icons[scn.charAt(1)]);
+        }
+    },1000)
+    </script>
+</body>
+</html>
