@@ -1,0 +1,20 @@
+body{
+   
+    border: solid 1px black;
+    height: 300px;
+    width: 600px;
+    margin: 100px 450px 100px 450px;
+    
+}
+table{
+    height: 150px;
+    width: 500px;
+    margin: 10px 50px 10px 50px;
+   
+}
+table, tr, td{
+    
+    border: solid 0.5px blue;
+    border-collapse: collapse;
+    
+}

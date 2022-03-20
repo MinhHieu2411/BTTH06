@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1 style="color: blue; text-align:center; ">Thao tác trên mảng </h1>
+    </header>
+    <div class="container">
+        <table >
+            <tr >
+                <td style="text-align: center; width: 20%;height: 37.5px;">
+                    <button type="button" onclick="taoSoNgauNhien()">Tạo mảng</button>
+                </td>
+                <td id="demo" style="width:80%"></td>
+            </tr>
+            <tr >
+                <td colspan="2" >
+                    <p id="demoChanged" style="color: red;">Giá trị mảng sau khi xử lý</p>
+            
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="2" style="height: 37.5px;">
+                    <form action="" id="form" onchange="sapXep()">
+                        <input id="increase" type="radio" name="gender" value="option1" >Sắp xếp tăng
+                        <input id="decrease" type="radio" name="gender" value="option2" >Sắp xếp giảm
+                    </form>
+                    
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2" style="text-align: center;height: 37.5px;">
+                
+                    <label for="" >Thêm vào vị trí: </label>
+                    <input id="index" type="number" id="" name=""style="width: 15%;">
+                    <label for="" >Giá trị: </label>
+                    <input  id="number" type="number" id="" name="" style="width: 15%;">
+
+                    <button type="button" onclick="themViTri()">thêm</button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
